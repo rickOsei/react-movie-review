@@ -1,13 +1,146 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Merriweather:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heading {
+  text-transform: capitalize;
+  font-family: "Alfa Slab One", cursive;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.underline {
+  width: 150px;
+  height: 1px;
+  margin: 0 auto;
+  background: brown;
+}
+
+.movie {
+  width: 60%;
+  padding: 2rem 0;
+
+  border: solid;
+  border-width: 0.5px 0 0.1px 0;
+  border-color: rgba(123, 123, 123, 0.25) transparent;
+}
+
+@media screen and (min-width: 900px) {
+  .movie {
+    width: 80%;
+  }
+}
+
+.title h2 {
+  /* font-family: "Merriweather", serif; */
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  line-height: 2;
+  /* color: brown; */
+}
+
+@media screen and (max-width: 769px) {
+  .title h2 {
+    font-size: 15px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.rating,
+.genre,
+.direct {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.397);
+}
+
+.rating {
+  padding: 0 10px 0 0;
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.139) transparent transparent;
+}
+
+.genre {
+  padding: 0 10px 0 0;
+  margin-left: 10px;
+  border: 1px solid;
+  border-color: transparent rgba(0, 0, 0, 0.139) transparent transparent;
+}
+
+.direct {
+  padding: 0 10px;
+  border: 1px solid;
+  border-color: transparent;
+}
+
+.info {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: rgb(54, 53, 53);
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 769px) {
+  .info {
+    font-size: 11px;
+  }
+}
+
+.byline {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.397);
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 769px) {
+  .genre,
+  .rating,
+  .direct,
+  .byline {
+    font-size: 10px;
+  }
+}
+
+span {
+  text-transform: capitalize;
+}
+
+.headline {
+  text-transform: capitalize;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(150, 7, 7, 0.397);
+  font-style: italic;
 }
